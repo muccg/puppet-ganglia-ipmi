@@ -1,0 +1,4 @@
+# ganglia_ipmi crontab(5) fragment
+#
+# min hour day mon dow	user	command
+*/5 * * * *	root	test -x /usr/local/bin/ganglia_ipmi_report.sh && /usr/local/bin/ganglia_ipmi_report.sh
